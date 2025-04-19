@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+     <html lang="ar">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>تتبع الصور</title>
+         <link href="../css/style.css" rel="stylesheet">
+         <script src="https://cdn.tailwindcss.com"></script>
+     </head>
+     <body class="bg-gray-100 flex flex-col items-center p-4 min-h-screen">
+         <h1 class="text-3xl font-bold mb-4">تتبع الصور</h1>
+         <div class="bg-white p-6 rounded shadow-md w-full max-w-md">
+             <input
+                 type="file"
+                 accept="image/*"
+                 id="imageInput"
+                 class="mb-4"
+             />
+             <button
+                 onclick="uploadImage()"
+                 id="searchButton"
+                 class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+             >
+                 بحث عن الصورة
+             </button>
+         </div>
+         <div id="results" class="mt-6 w-full max-w-2xl hidden">
+             <h2 class="text-2xl font-semibold mb-2">النتائج</h2>
+             <div class="bg-white p-4 rounded shadow-md">
+                 <h3 class="text-lg font-medium">روابط البحث:</h3>
+                 <p><a id="googleLink" href="#" target="_blank" class="text-blue-500">البحث على Google Images</a></p>
+                 <p><a id="yandexLink" href="#" target="_blank" class="text-blue-500">البحث على Yandex Images</a></p>
+                 <p><a id="bingLink" href="#" target="_blank" class="text-blue-500">البحث على Bing Visual Search</a></p>
+             </div>
+         </div>
+         <p class="text-sm text-gray-600 mt-2">الصور تُرفع إلى imgbb لتوليد روابط البحث.</p>
+
+         <script src="../js/script.js"></script>
+     </body>
+     </html>
