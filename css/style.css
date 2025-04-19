@@ -1,4 +1,23 @@
-/* أي تخصيصات إضافية لـ Tailwind */
-     body {
-         font-family: Arial, sans-serif;
-     }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+    background: gray !important;
+    cursor: not-allowed;
+}
+
+#searchButton svg {
+    transition: transform 0.2s;
+}
+
+#searchButton:hover svg {
+    transform: scale(1.1);
+}
